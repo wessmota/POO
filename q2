@@ -1,0 +1,14 @@
+cpf = input("Informe o CPF (apenas números): ").strip()
+
+
+if cpf.isdigit():
+    numero_digitos = len(cpf)
+    print(f"O CPF informado contém {numero_digitos} dígitos.")
+
+
+    if numero_digitos == 11:
+        print("O CPF informado está no formato correto (11 dígitos).")
+    else:
+        print("O CPF informado não está no formato correto (11 dígitos).")
+else:
+    print("Entrada inválida. Certifique-se de informar apenas números.")
