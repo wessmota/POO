@@ -1,0 +1,17 @@
+n = int(input("Informe o número de termos da série de Fibonacci: "))
+
+
+if n <= 0:
+    print("Por favor, informe um número maior que zero.")
+else:
+
+
+    fibonacci = [0, 1]
+
+
+    for i in range(2, n):
+        proximo = fibonacci[i - 1] + fibonacci[i - 2]
+        fibonacci.append(proximo)
+   
+    print(f"Série de Fibonacci com {n} termos:")
+    print(", ".join(map(str, fibonacci[:n]))) 
