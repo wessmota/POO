@@ -1,0 +1,12 @@
+inicio = 5
+fim = 15
+
+
+print("Tabela de Multiplicação (5 a 15)")
+print("-" * 30)
+
+
+for i in range(inicio, fim + 1):
+    for j in range(inicio, fim + 1):
+        print(f"{i} x {j} = {i * j}")
+    print("-" * 30)
